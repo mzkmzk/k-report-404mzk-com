@@ -54,8 +54,8 @@ Create_Webpack_Config_Data.prototype.get_entry_html = function(glob_path){
                         template: element,
                         inject: false,
                         minify: { //压缩HTML文件
-                          removeComments: false, //移除HTML中的注释
-                          collapseWhitespace: false //删除空白符与换行符
+                          removeComments: true, //移除HTML中的注释
+                          collapseWhitespace: true //删除空白符与换行符
                         },
                         inject: 'body',
                         chunks: chunks,

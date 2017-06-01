@@ -64,14 +64,14 @@ var config = {
         //loader: "html?-minimize" //避免压缩html,https://github.com/webpack/html-loader/issues/50
       }, {
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file-loader?name=fonts/[name].[ext]?[contenthash]'
+        loader: 'file-loader?name=fonts/[name].[ext]?[hash]'
       }, {
         test: /\.(png|jpe?g|gif)$/,
         //loader: 'url-loader?limit=819'
-        loader: 'url-loader?limit=819&name=images/[name].[ext]?[contenthash]'
+        loader: 'url-loader?limit=819&name=images/[name].[ext]?[hash]'
       }, {
         test: /\.(mp4|swf)$/,
-        loader: 'file?name=video/[name].[ext]?[contenthash]'
+        loader: 'file?name=video/[name].[ext]?[hash]'
       }
     ],
      /*postLoaders: [
